@@ -14,6 +14,26 @@ body {
 	background-color: var(--light-color-for-another);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
 .list {
 	list-style: none;
 }
@@ -22,7 +42,32 @@ body {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	outline: 1px solid red;
+}
 /* Стилизация шапки сайта */
+.header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
 .web {
 	color: var(--accent-color);
 }
@@ -38,6 +83,18 @@ body {
 	font-size: 26px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
+}
+.header-container {
+	display: flex;
+}
+.header-nav {
+	display: flex;
+}
+.header-list {
+	display: flex;
+}
+.header-contacts {
+	display: flex;
 }
 .header-item {
 	color: var(--title-color);
@@ -73,6 +130,8 @@ body {
 .hero {
 	background-color: var(--dark-background-color);
 	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 .hero-title {
 	color: var(--light-color-for-another);
@@ -82,6 +141,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 .hero-btn {
 	color: var(--light-color-for-another);
@@ -102,6 +162,10 @@ body {
 }
 
 /* Стилизация преимуществ */
+.benefits {
+	padding-top: 94px;
+	padding-bottom: 47px;
+}
 .benefits-item-title {
 	color: var(--title-color);
 	font-weight: 700;
@@ -119,6 +183,11 @@ body {
 }
 
 /* Стилизация работ */
+.works {
+	padding-top: 47px;
+	padding-bottom: 94px;
+}
+
 .works-tile {
 	color: var(--title-color);
 	font-weight: 700;
@@ -126,11 +195,15 @@ body {
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
+
+	margin-bottom: 50px;
 }
 
 /* Стилизация команды */
 .team {
 	background-color: var(--grey-background-color);
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .team-title {
 	color: var(--title-color);
@@ -140,6 +213,11 @@ body {
 	text-align: center;
 	letter-spacing: 0.03em;
 }
+
+.team-item-image {
+	margin-bottom: 30px;
+}
+
 .team-item-title {
 	color: var(--title-color);
 	font-weight: 500;
@@ -147,6 +225,7 @@ body {
 	line-height: 1.19;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
 }
 .team-item-text {
 	color: var(--text-color);
@@ -160,9 +239,14 @@ body {
 /* Стилизация подвала */
 .footer {
 	background-color: var(--dark-background-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .footer-logo {
 	color: var(--light-color-for-another);
+}
+.footer-list {
+	margin-top: 20px;
 }
 .footer-map {
 	color: var(--light-color-for-another);
@@ -193,7 +277,14 @@ body {
 }
 
 /* Стилизация страницы Портфолио */
+.nav-portfolio {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
 
+.nav-portfolio-list {
+	margin-bottom: 34px;
+}
 /* Стилизация кнопок */
 .nav-portfolio-btn {
 	color: var(--title-color);
@@ -214,12 +305,17 @@ body {
 }
 
 /* Стилизация работ портфолио */
+.nav-examples-item-image {
+	margin-bottom: 20px;
+}
+
 .nav-examples-item-title {
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	margin-bottom: 4px;
 }
 .nav-examples-item-text {
 	color: var(--text-color);
